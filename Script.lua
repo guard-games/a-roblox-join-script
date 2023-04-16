@@ -1,0 +1,6 @@
+game.Players.PlayerAdded:Connect(function(player)
+	print("player joined the game")
+	player.CharacterAdded:Connect(function(character)
+		print("player loaded")
+	end)
+end)
